@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    font-family: Helvetica, Helvetica, Arial, sans-serif;
+}
+
+header {
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3.5rem;
+    padding-top: 25px;
+
+}
+
+.logo {
+    width: 8rem;
+    z-index: 111;
+}
+
+header svg {
+    width: 100%;
+    height: 100%;
+
+}
+
+.top-input {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+    position: relative;
+
+}
+
+.top-input svg {
+    position: absolute;
+    width: 13px;
+    left: 14%;
+}
+
+header select {
+    width: 108px;
+    height: 100%;
+    margin: 0 1.75rem;
+    background: rgba(0, 0, 0, .4);
+    border: 1.5px solid #aaa;
+    color: #fff;
+    font-size: .875rem;
+    text-align: end;
+    border-radius: 4px;
+}
+
+header button {
+    height: 36px;
+    width: 83px;
+    background-color: #e50914;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 43rem;
+    background: url(./imgs/hero.jpg) center center no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.main-chield {
+    max-width: 42rem;
+    z-index: 10;
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+main h1 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+}
+
+main span {
+    margin: 01rem;
+    font-size: 25px
+}
+
+main p {
+    margin: 0.850rem;
+    font-size: 19.2px
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 430px 200px;
+    height: 60px;
+    border-radius: 3px;
+    position: relative;
+}
+
+form button {
+    background-color: #F40612;
+    color: #fff;
+    font-size: 1.6em;
+    cursor: pointer;
+    border: 1px;
+    border-radius: 3px;
+}
+
+form button:hover {
+    background-color: #f42631
+}
+
+form input {
+    padding: 9px;
+    font-size: 15px;
+    border: 1px solid #8c8c8c;
+    outline: 0;
+    border-radius: 3px;
+}
+
+form svg {
+    position: absolute;
+    right: 5%;
+    width: 5%;
+    height: 35%;
+    top: 20px;
+}
+
+.gradient {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .4);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .8) 0, transparent 60%, rgba(0, 0, 0, .8));
+}
+
+.section {
+    background: black;
+    border-top: 8px solid #222;
+}
+
+.container {
+    background: black;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1100px;
+    position: relative;
+    padding-bottom: 50px;
+    padding: 35px;
+}
+
+.tv-container {
+    width: 48%;
+}
+
+.tv-container img {
+    width: 100%;
+}
+
+.tv-container video {
+    width: 100%;
+}
+
+.container section {
+    width: 52%;
+}
+
+.container h1 {
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.container h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.tv-img {
+    position: relative;
+    z-index: 1;
+}
+
+.tv-video {
+    position: absolute;
+    width: 37%;
+    left: 55%;
+    top: 20%;
+}
+
+.container video {
+    height: 100%;
+    width: 100%;
+}
+
+.download .tv-img {
+    order: 1;
+}
+
+.download section {
+    order: 2;
+    padding: 0 0 0 3rem;
+}
+
+.download .tv-video {
+
+    z-index: 999;
+    position: absolute;
+    top: 60%;
+    width: 37%;
+    left: 9%;
+
+}
+
+.st-download-container {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    box-shadow: 0 0 2em 0 #000;
+    background: #000;
+    padding: 0.5em 0.75em;
+    border-radius: 7px;
+    border: 2px solid hsla(0, 0%, 100%, .25);
+}
+
+.st-download-img {
+    width: 56px;
+    margin: 0 1em 0 0;
+}
+
+.st-download-text h3 {
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+.st-download-text p {
+    color: #0071eb;
+    font-weight: 400;
+    font-size: .9em;
+}
+
+.download-gif {
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) 50% no-repeat;
+    background-size: 100%;
+    content: "";
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 3em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    width: 3em;
+}
+
+.dispositivos .tv-video {
+    position: absolute;
+    top: 24%;
+    width: 30%;
+    left: 59%;
+}
+
+.dispositivos .container {
+    padding-top: 90px;
+}
+
+.infantil .tv-img {
+    order: 1;
+}
+
+.infantil section {
+    order: 2;
+    padding: 0 0 0 3rem;
+}
+
+.infantil .container {
+    padding-top: 65px;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 950px) {
+    header {
+        max-width: 87%;
+        margin: 0px 2.5rem;
+
+    }
+
+    .main-chield {
+        justify-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        height: 110px;
+        width: 97%;
+        border-radius: 3px;
+        position: relative;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between
+    }
+
+    form input {
+        height: 28px;
+        width: 77%;
+    }
+
+    form button {
+        height: 45px;
+        width: 118px;
+        font-size: 1rem;
+    }
+
+    form svg {
+        position: absolute;
+        right: 42%;
+        width: 2%;
+        height: 34%;
+        top: 62%;
+    }
+
+    main h1 {
+        margin-bottom: 8px;
+    }
+
+    main p {
+        width: 71%;
+    }
+    .container {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .container section {
+        margin-top: 44px;
+        width: 87%;
+        text-align: center;
+    }
+
+    .container h1 {
+        font-size: 2.5rem;
+    }
+
+    .container h2 {
+        font-size: 1.2rem;
+    }
+
+    .tv-container {
+        width: 77%
+    }
+
+    .tv-video {
+        top: 37%;
+        left: 24%;
+        width: 100%;
+        max-width: 54%;
+        height: 100%;
+        max-height: 42%;
+    }
+
+    .download section {
+        order: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .download .tv-container {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .download .tv-video {
+        width: 42%;
+    }
+
+    .st-download-container {
+        width: 100%;
+        height: 23%;
+    }
+
+    .st-download-img {
+        width: 48px;
+    }
+
+    .download-gif {
+        margin-left: 22%;
+    }
+
+    .download .tv-video {
+        top: 75%;
+        left: 27%;
+    }
+.dispositivos section{
+    width: 100%;
+}
+.dispositivos .tv-container{
+    width: 36rem;
+
+}
+.dispositivos .tv-video{
+    height: 100%;
+    left: 50%;
+    max-height: 31%;
+    max-width: 63%;
+    position: absolute;
+    top: 53%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.infantil section{
+    order:0;
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+}
+.infantil .tv-container {
+    width: 100%;
+}
+}
+
+@media(max-width:715px){
+    .dispositivos .tv-container {
+        width: 30rem;
+    }
+    .dispositivos .tv-video{
+        max-height: 29%;
+        max-width: 47%;
+        top: 55%
+    }
+}
+
+    @media(max-width:600px) {
+        .tv-video {
+            max-width: 51%;
+            top: 42%;
+        }
+        .download.gif{
+            margin-left:0%;
+        }
+        .st-download-img {
+            width: 86px;
+        }
+        .st-download-text{
+            width: 100%;
+        }.download-gif {
+            margin-left:0%;
+        }
+.dispositivos .tv-container{
+width: 28rem;
+}}
+    
+
+
+    @media (max-width:540px) {
+        main {
+            height: 508.594px;
+        }
+
+        .main-chield {
+            margin-top: 90px;
+        }
+
+        main h1 {
+            font-size: 1.75rem;
+        }
+
+        main span {
+            font-size: 1.125rem;
+
+        }
+
+        .container section {
+            width: 98%;
+        }
+
+        .container h1 {
+            font-size: 1.675rem;
+        }
+
+        .container h2 {
+            font-size: 1.125rem;
+        }
+
+        .tv-video {
+            top: 41%;
+        }
+        .st-download-img{
+            width: 90px;
+        }
+        .st-download-text h3{
+            font-size: 14px;
+        }
+        .st-download-text{
+            font-size: 10px;
+        }
+.dispositivos .tv-container{
+    width: 21rem;
+}
+.dispositivos .tv-video{
+    max-height: 24%;
+    top: 58%;
+}
+}
+    
+
+    @media (max-width:375px) {
+        header {
+            margin: 0px 1.5rem;
+        }
+
+        header svg {
+            width: 6rem;
+        }
+
+        .top-input {
+            max-width: 59%;
+        }
+
+        .top-input svg {
+            width: 14px;
+            left: 9%;
+        }
+
+        header select {
+            width: 106px;
+            height: 88%;
+            margin: 0 0.75rem;
+        }
+
+        header button {
+            height: 27px;
+            width: 62px;
+            font-size: 13px;
+        }
+
+        .main-chield h1 {
+            width: 80%;
+        }
+
+        .main-chield p {
+            font-size: 18px;
+        }
+
+        .container section {
+            width: 105%;
+            margin-top: 10px;
+        }
+
+        .tv-container {
+            width: 110%;
+        }
+
+        .tv-video {
+            max-width: 65%;
+            top: 40%;
+            left: 17%;
+        }
+        .st-download-container h3{
+            font-size: 12px;
+        }
+        .dispositivos .tv-container {
+            width: 18rem;}
+            .dispositivos .tv-video{
+                max-width: 55%;
+            }
+
+    }
